@@ -55,6 +55,8 @@ The second dag in the pipeline calculates metrics per customer and product, tren
 
 ## DB Schema
 
+<img src="images/sales_schema.jpeg" alt="Sales Schema">
+
 ### Customers Table
 - Represents information about customers.
 - **Columns:**
