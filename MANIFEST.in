@@ -1,0 +1,12 @@
+graft aiqst
+
+include version
+include requirements.txt
+include requirements.dev.txt
+include MANIFEST.in
+
+global-exclude tests
+global-exclude test
+
+prune dist
+prune build

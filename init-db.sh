@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" 
+    CREATE USER docker;
+    CREATE DATABASE "$POSTGRES_DB";
+    GRANT ALL PRIVILEGES ON DATABASE "$POSTGRES_DB" TO docker;
+    CREATE SCHEMA source;
+    COMMIT;
+EOSQL
